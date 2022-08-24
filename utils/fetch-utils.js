@@ -11,8 +11,8 @@ async function fetchRestaurants(userCookie) {
     },
     credentials: 'include',
   })
-
   const data = await res.json()
+  console.log('ConsoleLog fetch data', data)
   if (res.ok) {
     return data
   } else {

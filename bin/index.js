@@ -24,7 +24,9 @@ async function loadPrompts() {
   console.log(chalk.blue(`Welcome back, ${user.email}`))
 
   const data = await fetchRestaurants(cookieInfo)
-  console.log(chalk.bold.blue(data))
+
+  console.log(chalk.underline.yellow('Here are some restaurants!'))
+  console.log(data)
 }
 
 loadPrompts()
